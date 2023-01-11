@@ -6,8 +6,9 @@ var (
 	db *gorm.DB
 )
 
+// Connect replace x & y wih mysql credentials
 func Connect() {
-	d, err := gorm.Open("mysql", "victorviking:VictorViking/simplerest?charset=utf8&parseTime=True&location=Local")
+	d, err := gorm.Open("mysql", "x:y/simplerest?charset=utf8&parseTime=True&location=Local")
 	if err != nil {
 		panic(err)
 	}
